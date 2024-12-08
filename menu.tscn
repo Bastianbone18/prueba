@@ -1,0 +1,142 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqrlgudmfsl7"]
+
+[ext_resource type="Texture2D" uid="uid://buwjsxugf6otq" path="res://icon.svg" id="1_3at5y"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4a6md"]
+bg_color = Color(0.320467, 0.177216, 0.388342, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.197063, 0.0988249, 0.242098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lq026"]
+bg_color = Color(0.30489, 0.070258, 0.572145, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.197063, 0.0988249, 0.242098, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4a6md")
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -101.0
+offset_top = -101.0
+offset_right = -1.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+pivot_offset = Vector2(0.5, 0)
+theme_override_styles/panel = SubResource("StyleBoxFlat_lq026")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -64.0
+offset_right = 64.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_3at5y")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -439.0
+offset_top = -258.0
+offset_right = 452.0
+offset_bottom = -195.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.837111, 0.887297, 0.714835, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.62418, 0.826359, 0.21526, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 45
+text = "Intento numero 1 de menu asi bien melo 
+"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="Label"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = 375.0
+offset_right = 142.0
+offset_bottom = 438.0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.837111, 0.887297, 0.714835, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.62418, 0.826359, 0.21526, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 45
+text = "PLAY
+"
+horizontal_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_left = 678.0
+offset_top = 573.0
+offset_right = 1135.0
+offset_bottom = 630.0
+value = 10.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 182.0
+offset_right = 436.0
+offset_bottom = 406.0
+
+[node name="Button" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.737193, 0.737193, 0.737193, 1)
+theme_override_font_sizes/font_size = 61
+text = "salir
+"
+
+[node name="musica" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.737193, 0.737193, 0.737193, 1)
+theme_override_font_sizes/font_size = 61
+text = "musica
+"

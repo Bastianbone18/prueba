@@ -1,0 +1,6 @@
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://dlef82shcjaip"]
+
+[resource]
+emission_enabled = true
+emission = Color(0.0819342, 0.626139, 0.593377, 1)
+emission_energy_multiplier = 5.74
